@@ -107,7 +107,7 @@
 @end
 
 /////////////////////////////////////////////////////////////////////
-@implementation UIImageView (HJCornerRadius)
+@implementation UIImageView (HJQCornerRadius)
 
 - (CGFloat)aliCornerRadius {
     return [self imageObserver].cornerRadius;
