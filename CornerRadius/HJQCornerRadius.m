@@ -2,11 +2,11 @@
 //  HJQCornerRadius.m
 //  HJImageViewDemo
 //
-//  Created by haijiao on 16/3/10.
-//  Copyright © 2016年 olinone. All rights reserved.
+//  Created by HanJunQiang on 16/7/2.
+//  Copyright © 2016年 HaRi. All rights reserved.
 //
 
-#import "HJCornerRadius.h"
+#import "HJQCornerRadius.h"
 #import <objc/runtime.h>
 
 @interface UIImage (cornerRadius)
@@ -28,7 +28,7 @@
 @end
 
 /////////////////////////////////////////////////////////////////////
-@interface HJImageObserver : NSObject
+@interface HJQImageObserver : NSObject
 
 @property (nonatomic, assign) UIImageView *originImageView;
 @property (nonatomic, strong) UIImage *originImage;
@@ -38,7 +38,7 @@
 
 @end
 
-@implementation HJImageObserver
+@implementation HJQImageObserver
 
 - (void)dealloc {
     [self.originImageView removeObserver:self forKeyPath:@"image"];
@@ -107,7 +107,7 @@
 @end
 
 /////////////////////////////////////////////////////////////////////
-@implementation UIImageView (HJCornerRadius)
+@implementation UIImageView (HJQCornerRadius)
 
 - (CGFloat)aliCornerRadius {
     return [self imageObserver].cornerRadius;
@@ -117,10 +117,10 @@
     [self imageObserver].cornerRadius = aliCornerRadius;
 }
 
-- (HJImageObserver *)imageObserver {
-    HJImageObserver *imageObserver = objc_getAssociatedObject(self, @selector(imageObserver));
+- (HJQImageObserver *)imageObserver {
+    HJQImageObserver *imageObserver = objc_getAssociatedObject(self, @selector(imageObserver));
     if (!imageObserver) {
-        imageObserver = [[HJImageObserver alloc] initWithImageView:self];
+        imageObserver = [[HJQImageObserver alloc] initWithImageView:self];
         objc_setAssociatedObject(self, @selector(imageObserver), imageObserver, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     return imageObserver;

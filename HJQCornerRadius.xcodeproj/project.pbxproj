@@ -15,8 +15,8 @@
 		11C457A61D2763C0004400F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C457A41D2763C0004400F6 /* LaunchScreen.storyboard */; };
 		11C457B11D2763C0004400F6 /* HJQCornerRadiusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C457B01D2763C0004400F6 /* HJQCornerRadiusTests.m */; };
 		11C457BC1D2763C0004400F6 /* HJQCornerRadiusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C457BB1D2763C0004400F6 /* HJQCornerRadiusUITests.m */; };
-		11C457CC1D2765FE004400F6 /* HJQCornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C457CB1D2765FE004400F6 /* HJQCornerRadius.m */; };
 		11C457CE1D276772004400F6 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 11C457CD1D276772004400F6 /* test.png */; };
+		11C457DA1D277B9C004400F6 /* HJQCornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C457D91D277B9C004400F6 /* HJQCornerRadius.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +53,9 @@
 		11C457B71D2763C0004400F6 /* HJQCornerRadiusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJQCornerRadiusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C457BB1D2763C0004400F6 /* HJQCornerRadiusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJQCornerRadiusUITests.m; sourceTree = "<group>"; };
 		11C457BD1D2763C0004400F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		11C457CA1D2765FE004400F6 /* HJQCornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJQCornerRadius.h; sourceTree = "<group>"; };
-		11C457CB1D2765FE004400F6 /* HJQCornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJQCornerRadius.m; sourceTree = "<group>"; };
 		11C457CD1D276772004400F6 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		11C457D81D277B9C004400F6 /* HJQCornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJQCornerRadius.h; sourceTree = "<group>"; };
+		11C457D91D277B9C004400F6 /* HJQCornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJQCornerRadius.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +106,8 @@
 		11C457951D2763C0004400F6 /* HJQCornerRadius */ = {
 			isa = PBXGroup;
 			children = (
-				11C457C91D2765FE004400F6 /* CornerRadius */,
 				11C457991D2763C0004400F6 /* AppDelegate.h */,
+				11C457D71D277B9C004400F6 /* CornerRadius */,
 				11C4579A1D2763C0004400F6 /* AppDelegate.m */,
 				11C4579C1D2763C0004400F6 /* ViewController.h */,
 				11C4579D1D2763C0004400F6 /* ViewController.m */,
@@ -147,11 +147,11 @@
 			path = HJQCornerRadiusUITests;
 			sourceTree = "<group>";
 		};
-		11C457C91D2765FE004400F6 /* CornerRadius */ = {
+		11C457D71D277B9C004400F6 /* CornerRadius */ = {
 			isa = PBXGroup;
 			children = (
-				11C457CA1D2765FE004400F6 /* HJQCornerRadius.h */,
-				11C457CB1D2765FE004400F6 /* HJQCornerRadius.m */,
+				11C457D81D277B9C004400F6 /* HJQCornerRadius.h */,
+				11C457D91D277B9C004400F6 /* HJQCornerRadius.m */,
 			);
 			path = CornerRadius;
 			sourceTree = "<group>";
@@ -287,7 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11C457CC1D2765FE004400F6 /* HJQCornerRadius.m in Sources */,
+				11C457DA1D277B9C004400F6 /* HJQCornerRadius.m in Sources */,
 				11C4579E1D2763C0004400F6 /* ViewController.m in Sources */,
 				11C4579B1D2763C0004400F6 /* AppDelegate.m in Sources */,
 				11C457981D2763C0004400F6 /* main.m in Sources */,

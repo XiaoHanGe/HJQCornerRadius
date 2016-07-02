@@ -2,8 +2,8 @@
 //  HJQCornerRadius.h
 //  HJImageViewDemo
 //
-//  Created by haijiao on 16/3/10.
-//  Copyright © 2016年 olinone. All rights reserved.
+//  Created by HanJunQiang on 16/7/2.
+//  Copyright © 2016年 HaRi. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
