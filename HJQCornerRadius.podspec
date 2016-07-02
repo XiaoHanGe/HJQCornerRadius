@@ -10,6 +10,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/XiaoHanGe/HJQCornerRadius.git", :tag => s.version.to_s }
   s.source_files  = "CornerRadius/**/*.{h,m}"
   s.public_header_files = "CornerRadius/**/*.h"
-  s.framework  = "SomeFramework"
   s.requires_arc = true
 end
